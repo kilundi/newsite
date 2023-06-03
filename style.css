@@ -1,0 +1,50 @@
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   }
+   
+   #image-container { 
+       display:grid; 
+       grid-template-columns: repeat(4 , 1fr);
+       gap: 20px;
+       margin:0 5%;
+   }
+   
+   @media only screen and (max-width:40em){
+       #image-container{ 
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           margin: 0;
+          
+       }
+       #searchedImage { 
+           padding: 5px 9px;
+       }
+   
+   }
+   
+   form { 
+      margin: 2% 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+   }
+   
+   #searchedImage{ 
+       padding: 10px 15px;
+       border-radius: 5%;
+       border: 1px green solid;
+   }
+   
+    input[type='submit']{ 
+     padding: 10px 20px;
+     background-color: green;
+     color: white;
+     border: none;
+     border-radius: 6px;
+   }
+   
